@@ -1,0 +1,143 @@
+* {
+	margin,padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+.wrapper {
+	width: 100%;
+	height: auto;
+}
+body{
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Banner START*/
+#bannerImage {
+
+}
+#banner{
+	background: url(../images/banner.jpg);
+	min-height: 350px;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size:cover;
+	position: relative;
+	overflow: hidden;
+}
+#bannerTextArea {
+	position: absolute;
+  	top: 50%; left: 50%;
+  	transform: translate(-50%,-50%);
+  	text-align: center;
+  	background: #fff;
+  	border-radius: 20px;
+  	padding: 10px 10px 0 10px;
+  	font-size: 13rem;
+}
+.logo {
+	border: 2px solid #fff;
+	border-radius: 20px;
+	background:radial-gradient(#e6b8b8 50%, transparent 50%);
+	background-position: center;
+	/*background-attachment: fixed;*/
+	background-size: 3px 3px;
+	background-repeat:repeat;
+	color:#fff;
+	padding: 10px 20px 5px 20px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+}
+h2{
+
+}
+
+/*Banner END*/
+/*Location Selection START*/
+#selectionWrapper {
+	background: #FFFFFF;
+	padding: 10px 0;
+}
+.selection-item { 
+	text-align: center;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	background:radial-gradient(#e6b8b8 50%, transparent 50%), url(../images/banner.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 3px 3px,cover;
+	-webkit- background-size: 3px 3px,cover;
+	background-repeat:repeat;
+	cursor: pointer;
+}
+
+.selection-item-top {
+	font-size: 35px;
+	color:#ffffff;
+		
+}
+.selection-item-bottom {
+	border-top: 3px solid #e6e6e6;
+	font-size: 1.5em;
+	color:#fff;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+}
+.plr-1 {
+	padding: 0 5px;
+	max-width: 150px;
+}
+
+/*Location Selection END*/
+/*Maps START*/
+#mapArea {
+	height: 470px;
+	margin-bottom: 15px;
+	
+}
+#map {
+    height: 100%;
+}
+
+/*Maps END*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+}
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+@media (max-width: 992px) { 
+	.selection-item {
+		/*background: radial-gradient(circle,yellow,#f06d06);*/
+		background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%),-webkit-radial-gradient(circle,yellow,#f06d06);
+  		background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%),-moz-radial-gradient(circle,yellow,#f06d06);
+  		background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%)-o-radial-gradient(circle,yellow,#f06d06);
+  		background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%),radial-gradient(circle,yellow,#f06d06);
+  		-webkit-background-size: 3px 3px,cover;
+  		-moz-background-size: 3px 3px,cover;
+  		background-size: 3px 3px,cover;
+		background-attachment: initial;
+	}
+}
+
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/*Under 768 px*/
+@media (max-width: 768px) {
+	.selection-item {
+		/*background-attachment: initial;*/
+	}
+}

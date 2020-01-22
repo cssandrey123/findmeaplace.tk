@@ -1,0 +1,52 @@
+h2 {
+	font-size: 1.4rem;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+.card-img {
+	height: 225px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	h2 {
+		font-size: 1.7rem;
+	}
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	h2{
+		font-size: 2rem;
+	}
+	.card-body {
+		padding-left: 15px;
+	}
+}
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/*Under 768 px*/
+@media (max-width: 768px) {
+	.card-img {
+		height: 285px;
+	}
+}
